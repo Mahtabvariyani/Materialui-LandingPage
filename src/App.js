@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import SearchAppBar from "./components/AppBar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Tour from "./pages/Tour";
-import Footer from './components/Footer'
+import Footer from "./components/Footer";
 function App() {
   return (
     <BrowserRouter>
@@ -11,8 +11,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/:id" element={<Tour />} />
-
+        <Route path="/Tour" element={<Tour />} />
       </Routes>
       <Footer />
     </BrowserRouter>
